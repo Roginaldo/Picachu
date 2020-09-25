@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu_yo_cards</title>
+</head>
+<body>
+    <h1>Cards Yu_Yg_Oh-0H</h1>
+</body>
+<script>
+    const URL = "https://db.ygoprodeck.com/api/v7/cardinfo.php?name=blue-eyes white dragon " 
+    fetch(URL).then(function (res){
+        res.json().then(function(data){
+            console.log (data)
+            alert(data.data[0].name)
+        })
+    })
+</script>
+</html>
